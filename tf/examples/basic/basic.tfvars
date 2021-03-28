@@ -6,9 +6,9 @@ zone         = "us-central1-a"
 # subnetwork_name         = "<existing subnetwork name>"
 # shared_vpc_host_project = "<vpc host project>"
 
-# disable_controller_public_ips = true
-# disable_login_public_ips      = true
-# disable_compute_public_ips    = true
+disable_controller_public_ips = false
+disable_login_public_ips      = false
+disable_compute_public_ips    = false
 
 # suspend_time  = 300
 
@@ -16,7 +16,6 @@ controller_machine_type = "n1-standard-2"
 controller_image        = "projects/schedmd-slurm-public/global/images/family/schedmd-slurm-20-11-4-hpc-centos-7"
 controller_disk_type    = "pd-ssd"
 controller_disk_size_gb = 1000
-external_controller_ip = true
 # controller_labels = {
 #   key1 = "val1"
 #   key2 = "val2"
@@ -41,8 +40,6 @@ login_machine_type = "n1-standard-2"
 login_image        = "projects/schedmd-slurm-public/global/images/family/schedmd-slurm-20-11-4-hpc-centos-7"
 login_disk_type    = "pd-standard"
 login_disk_size_gb = 20
-external_login_ips = true
-external_compute_ips = true
 # login_labels = {
 #   key1 = "val1"
 #   key2 = "val2"
